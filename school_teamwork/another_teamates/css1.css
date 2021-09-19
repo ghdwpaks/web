@@ -1,0 +1,98 @@
+main {
+    width: 1920px;
+    height: 9240px;
+    padding: 0 0 119px;
+    background-color: #f9fafb;
+  }
+
+  .what-SSR
+  {
+    width: 1227px;
+    height: 177px;
+    margin: 70.7px 112.5px 106px 4px;
+    font-family: NotoSansCJKkr;
+    font-size: 120px;
+    font-weight: 900;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.48;
+    letter-spacing: normal;
+    text-align: center;
+    color: #262626;
+  }
+  .what-SSR .text-style-1
+  {
+    color: #333333;
+  }
+
+  .SSR-first
+  {
+    width: 1365px;
+    height: 42px;
+    margin: 106.5px 28px 25px 44.9px;
+    font-family: NotoSansCJKkr;
+    font-size: 25px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 2;
+    letter-spacing: normal;
+    text-align: left;
+    color: #333333;
+  }
+
+  .SSR-second
+  {
+    width: 1464px;
+    height: 42px;
+    margin: 25px 132.5px 25px 42.9px;
+    font-family: NotoSansCJKkr;
+    font-size: 25px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 2;
+    letter-spacing: normal;
+    text-align: left;
+    color: #333333;
+  }
+
+  .SSR-third
+  {
+    width: 1235px;
+    height: 42px;
+    margin: 25px 27.3px 215.5px 42.9px;
+    font-family: NotoSansCJKkr;
+    font-size: 25px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 2;
+    letter-spacing: normal;
+    text-align: left;
+    color: #333333;
+  }
+
+  .SYSTEM-SECURITY-RESEARCH {
+    width: 833px;
+    height: 74px;
+    margin: 651.7px 202.5px 55.7px 15.5px;
+    font-family: NotoSansCJKkr;
+    font-size: 50px;
+    font-weight: 900;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.48;
+    letter-spacing: normal;
+    text-align: left;
+    color: rgba(117, 117, 117, 0.53);
+  }
+
+  .circle /*이 부분 zeplin에서 전통성 전문성 그림 뒤에 있는 동그라미 수정 필요함*/
+  {
+      width:200px;
+      height:200px;
+      border-radius:50%;
+      background:white;
+        
+  }

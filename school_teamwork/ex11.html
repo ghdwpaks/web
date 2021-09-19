@@ -1,0 +1,63 @@
+<!--console의 기능들중 여러가지를 모아놓음 + 그걸 js를 통해서 html 코드에도 적용시켜봄-->
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+        <style>
+            .js{
+                font-weight: bold;
+                color: red;
+            }
+        </style>
+    </head>
+    <body style="background-color: gray;">
+        <h1><a href="index.html">WEB</a></h1>
+        <input type="button" value="night" onclick="
+        var target = document.querySelector('body');
+        if (this.value === 'night'){
+            target.style.backgroundColor = 'black';
+            target.style.color= 'white';
+            this.value ='day';
+            var alist = document.querySelectorAll('a');
+            var i = 0;
+            while(i < alist.length){
+                console.log(alist[i]);
+                alist[i].style.color = 'powderblue';
+                i = i +1;
+            }
+        }else{
+            target.style.backgroundColor = 'white';
+            target.style.color= 'black';
+            this.value ='night';
+            var alist = document.querySelectorAll('a');
+            var i = 0;
+            while(i < alist.length){
+                console.log(alist[i]);
+                alist[i].style.color = 'blue';
+                i = i +1;
+            }
+        }
+        ">
+        <ul>
+            <li><a href="https://naver.com"><h2>CSS</h2></a></li>
+            <li><a href="https://naver.com"><h2>HTML</h2></a></li>
+            <li><a href="https://naver.com"><h2>JavaScript</h2></a></li>
+        </ul>
+        <h2 style="background-color:coral;color:powderblue;">JavaScript</h2>
+        <p>
+            <span id="first" class="js">JavaScript</span> (/ˈdʒɑːvəˌskrɪpt/[6]), often abbreviated as JS, is a high-level, dynamic, weakly typed, prototype-based, multi-paradigm, and interpreted programming language. Alongside <span>HTML</span> and <span>CSS</span>, <span class="js">JavaScript</span> is one of the three core technologies of World Wide Web content production. It is used to make webpages interactive and provide online programs, including video games. The majority of websites employ it, and all modern web browsers support it without the need for plug-ins by means of a built-in <span class="js">JavaScript</span> engine. Each of the many <span class="js">JavaScript</span> engines represent a different implementation of <span class="js">JavaScript</span>, all based on the ECMAScript specification, with some engines not supporting the spec fully, and with many engines supporting additional features beyond ECMA.
+        </p>
+    </body>
+    <!--
+        var alist = document.querySelectorAll('a');
+        var i = 0;
+        while(i < alist.length){
+            console.log(alist[i]);
+            alist[i].style.color = 'powderblue';
+            i = i +1;
+        }
+    
+    -->
+</html>

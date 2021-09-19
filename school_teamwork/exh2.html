@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+        <style>
+            #aa{
+                position: absolute;
+                background: powderblue;
+
+                width:  100px;
+                height: 100px;
+                border-radius: 50%;
+
+                animation-name: circle-expansion;
+                animation-duration: 3s;
+
+            }
+
+            @keyframes circle-expansion{
+                0% {left: 0px; top: 0px; width: 100;}
+                100%{left: 200px; top: 0px; width: 200;}
+            }
+            .object {
+            animation-name: 1s;
+            animation-duration: 2s; 
+            animation-delay: 1s; 
+            animation-direction: alternate; 
+            animation-iteration-count: 3;
+            animation-play-state: paused; 
+            animation-timing-function: 1s;
+            animation-fill-mode: both;
+            }
+            div{
+            position:absolute;
+            left:100px;
+            width:100px;
+            height:50px;
+            margin-left:-50px;
+            background-color:#000000;
+            color:#ffffff;
+            /* 애니메이션 이름 */
+            animation-name: jaehee;
+            animation-duration:2s;
+            animation-duration: leaner;
+            animation-iteration-count:3;
+            animation-direction: alternate;
+            animation-fill-mode: forwards;
+            }
+
+            /* 키프레임 이름 = 애니메이션 이름 */
+            @-webkit-keyframes jaehee {
+                0% {
+                    left:100px;
+                }
+                100% {
+                    left:300px;
+                }
+            }
+            
+        </style>
+    </head>
+    <body>
+        <div id="aa"></div>
+    </body>
+</html>
