@@ -1,0 +1,53 @@
+<html>
+<head>
+<title>계산기</title>
+<script>
+function cal(form) {
+form.ex.value = eval(form.ex.value);
+}
+function btn(form,s) {
+form.ex.value += s;
+}
+function cls(form) {
+form.ex.value = "";
+}
+</script>
+</head>
+<body>
+<center>
+<form>
+<table border="1">
+<td colspan="4"><input type="text" name="ex" size="20"></td>
+<tr>
+<td><input type="button" value="7" onclick="btn(this.form,`7`)"></td>
+<td><input type="button" value="8" onclick="btn(this.form,`8`)"></td>
+<td><input type="button" value="9" onclick="btn(this.form,`9`)"></td>
+<td><input type="button" value="/" onclick="btn(this.form,`/`)"></td>
+</tr>
+<tr>
+<td><input type="button" value="4" onclick="btn(this.form,`4`)"></td>
+<td><input type="button" value="5" onclick="btn(this.form,`5`)"></td>
+<td><input type="button" value="6" onclick="btn(this.form,`6`)"></td>
+<td><input type="button" value="*" onclick="btn(this.form,`*`)"></td>
+</tr>
+<tr>
+<td><input type="button" value="1" onclick="btn(this.form,`1`)"></td>
+<td><input type="button" value="2" onclick="btn(this.form,`2`)"></td>
+<td><input type="button" value="3" onclick="btn(this.form,`3`)"></td>
+<td><input type="button" value="-" onclick="btn(this.form,`-`)"></td>
+</tr>
+<tr>
+<td><input type="button" value="0" onclick="btn(this.form,`0`)"></td>
+<td><input type="button" value="." onclick="btn(this.form,`.`)"></td>
+<td><input type="button" value="+" onclick="btn(this.form,`+`)"></td>
+<td><input type="button" value="%" onclick="btn(this.form,`%`)"></td>
+</tr>
+<tr>
+<td colspan="2"><input type="button" value=" = " onclick="cal(this.form)"></td>
+<td colspan="2"><input type="button" value="Clear" onclick="cls(this.form)"></td>
+</tr>
+</table>
+</form>
+</center>
+</body>
+</html>
